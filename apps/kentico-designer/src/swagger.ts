@@ -3,9 +3,9 @@ import { DocumentBuilder, SwaggerCustomOptions } from "@nestjs/swagger";
 export const swaggerPath = "api";
 
 export const swaggerDocumentOptions = new DocumentBuilder()
-  .setTitle("Kentico Designer")
+  .setTitle("My App")
   .setDescription(
-    '\n\n## Congratulations! Your service resource is ready.\n  \nPlease note that all endpoints are secured with JWT Bearer authentication.\nBy default, your service resource comes with one user with the username "admin" and password "admin".\nLearn more in [our docs](https://docs.amplication.com)'
+    'My first application for testing purposes\n\n## Congratulations! Your service resource is ready.\n  \nPlease note that all endpoints are secured with JWT Bearer authentication.\nBy default, your service resource comes with one user with the username "admin" and password "admin".\nLearn more in [our docs](https://docs.amplication.com)'
   )
   .addBearerAuth()
   .build();
@@ -16,5 +16,5 @@ export const swaggerSetupOptions: SwaggerCustomOptions = {
   },
   customCssUrl: "../swagger/swagger.css",
   customfavIcon: "../swagger/favicon.png",
-  customSiteTitle: "Kentico Designer",
+  customSiteTitle: "My App",
 };

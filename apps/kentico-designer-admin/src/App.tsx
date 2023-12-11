@@ -28,7 +28,7 @@ const App = (): React.ReactElement => {
   return (
     <div className="App">
       <Admin
-        title={"Kentico Designer"}
+        title={"My App"}
         dataProvider={dataProvider}
         authProvider={jwtAuthProvider}
         theme={theme}
